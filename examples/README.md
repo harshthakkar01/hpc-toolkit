@@ -1438,7 +1438,7 @@ For more information see:
 * [Slurm on Google Cloud High Throughput documentation](https://github.com/GoogleCloudPlatform/slurm-gcp/blob/master/docs/htc.md)
 * [General Slurm High Throughput documentation](https://slurm.schedmd.com/high_throughput.html)
 
-[htc-slurm-v5-legacy.yaml]: ../community/examples/htc-slurm.yaml
+[htc-slurm-v5-legacy.yaml]: ../community/examples/htc-slurm-v6.yaml
 
 ### [htc-slurm-v6.yaml] ![community-badge] ![experimental-badge]
 
