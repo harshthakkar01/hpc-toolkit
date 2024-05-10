@@ -25,7 +25,7 @@ md_toc github examples/README.md | sed -e "s/\s-\s/ * /"
   * [hpc-slurm6-tpu.yaml](#hpc-slurm6-tpuyaml--) ![community-badge] ![experimental-badge]
   * [hpc-slurm6-tpu-maxtext.yaml](#hpc-slurm6-tpu-maxtextyaml--) ![community-badge] ![experimental-badge]
   * [ml-slurm-v5-legacy.yaml](#ml-slurm-v5-legacyyaml--) ![core-badge] ![deprecated-badge]
-  * [ml-slurm-v6.yaml](#ml-slurm-v6yaml--) ![core-badge] ![experimental-badge]
+  * [ml-slurm.yaml](#ml-slurmyaml-) ![core-badge]
   * [image-builder-v5-legacy.yaml](#image-builder-v5-legacyyaml--) ![core-badge] ![deprecated-badge]
   * [image-builder.yaml](#image-builderyaml-) ![core-badge]
   * [serverless-batch.yaml](#serverless-batchyaml-) ![core-badge]
@@ -578,7 +578,7 @@ timestamp for uniqueness.
 
 [ml-slurm-v5-legacy.yaml]: ../examples/ml-slurm-v5-legacy.yaml
 
-### [ml-slurm-v6.yaml] ![core-badge] ![experimental-badge]
+### [ml-slurm.yaml] ![core-badge]
 
 This blueprint provisions an HPC cluster running the Slurm scheduler with the
 machine learning frameworks PyTorch and TensorFlow pre-installed on every
@@ -593,8 +593,8 @@ VM. The cluster has 2 partitions:
 To provision the cluster, please run:
 
 ```text
-./ghpc create examples/ml-slurm-v6.yaml --vars "project_id=${GOOGLE_CLOUD_PROJECT}"
-./ghpc deploy ml-example-v6
+./ghpc create examples/ml-slurm.yaml --vars "project_id=${GOOGLE_CLOUD_PROJECT}"
+./ghpc deploy ml-example
 ```
 
 After accessing the login node, you can activate the conda environment for each
@@ -625,7 +625,7 @@ Finally, browse to the [Cloud Console][console-images] to delete your custom
 image. It will be named beginning with `ml-slurm` followed by a date and
 timestamp for uniqueness.
 
-[ml-slurm-v6.yaml]: ../examples/ml-slurm-v6.yaml
+[ml-slurm.yaml]: ../examples/ml-slurm.yaml
 
 ### [image-builder-v5-legacy.yaml] ![core-badge] ![deprecated-badge]
 
