@@ -14,11 +14,11 @@
 
 ---
 
-blueprint_name: gpu-vm-v6
+blueprint_name: gpu-vm
 
 vars:
   project_id:  ## Set GCP Project ID Here ##
-  deployment_name: gpu-vm-v6
+  deployment_name: gpu-vm
   region: us-central1
   zone: us-central1-c
   instance_image_vm:

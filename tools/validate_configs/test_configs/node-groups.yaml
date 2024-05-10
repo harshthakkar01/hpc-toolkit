@@ -14,11 +14,11 @@
 
 ---
 
-blueprint_name: node-group-test-v6
+blueprint_name: node-group-test
 
 vars:
   project_id:  ## Set GCP Project ID Here ##
-  deployment_name: slurm-gcp-v6
+  deployment_name: slurm-gcp
   region: us-central1
   zone: us-central1-c
 
