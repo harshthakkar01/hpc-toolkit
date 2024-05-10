@@ -24,7 +24,7 @@ tags:
 
 timeout: 14400s  # 4hr
 steps:
-- id: lustre-slurm-v6
+- id: lustre-slurm
   name: us-central1-docker.pkg.dev/$PROJECT_ID/hpc-toolkit-repo/test-runner
   entrypoint: /bin/bash
   env:
@@ -40,4 +40,4 @@ steps:
 
     ansible-playbook tools/cloud-build/daily-tests/ansible_playbooks/slurm-integration-test.yml \
       --user=sa_106486320838376751393 --extra-vars="project=${PROJECT_ID} build=$${BUILD_ID_SHORT}" \
-      --extra-vars="@tools/cloud-build/daily-tests/tests/lustre-slurm-v6.yml"
+      --extra-vars="@tools/cloud-build/daily-tests/tests/lustre-slurm.yml"
