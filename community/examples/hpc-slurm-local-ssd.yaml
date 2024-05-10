@@ -14,7 +14,7 @@
 
 ---
 
-blueprint_name: hpc-slurm-local-ssd-v6
+blueprint_name: hpc-slurm-local-ssd
 
 vars:
   project_id:  ## Set GCP Project ID Here ##
