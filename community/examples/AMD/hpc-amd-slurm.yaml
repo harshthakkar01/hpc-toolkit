@@ -13,11 +13,11 @@
 # limitations under the License.
 
 ---
-blueprint_name: hpc-amd-slurm-v6
+blueprint_name: hpc-amd-slurm
 
 vars:
   project_id:  ## Set GCP Project ID Here ##
-  deployment_name: amd-v6
+  deployment_name: amd
   region: us-east4
   zone: us-east4-c
 
