@@ -21,7 +21,7 @@ md_toc github examples/README.md | sed -e "s/\s-\s/ * /"
   * [hpc-slurm.yaml](#hpc-slurmyaml-) ![core-badge]
   * [hpc-enterprise-slurm-v5-legacy.yaml](#hpc-enterprise-slurm-v5-legacyyaml--) ![core-badge] ![deprecated-badge]
   * [hpc-enterprise-slurm.yaml](#hpc-enterprise-slurmyaml-) ![core-badge]
-  * [hpc-slurm-static-v6.yaml](#hpc-slurm-static-v6yaml--) ![core-badge] ![experimental-badge]
+  * [hpc-slurm-static.yaml](#hpc-slurm-staticyaml-) ![core-badge]
   * [hpc-slurm6-tpu.yaml](#hpc-slurm6-tpuyaml--) ![community-badge] ![experimental-badge]
   * [hpc-slurm6-tpu-maxtext.yaml](#hpc-slurm6-tpu-maxtextyaml--) ![community-badge] ![experimental-badge]
   * [ml-slurm-v5-legacy.yaml](#ml-slurm-v5-legacyyaml--) ![core-badge] ![deprecated-badge]
@@ -483,7 +483,7 @@ to 256
 
 [hpc-enterprise-slurm.yaml]: ./hpc-enterprise-slurm.yaml
 
-### [hpc-slurm-static-v6.yaml] ![core-badge] ![experimental-badge]
+### [hpc-slurm-static.yaml] ![core-badge]
 
 This example demonstrates how to create a partition with static compute nodes.
 See [Best practices for static compute nodes] for instructions on setting up a
@@ -510,7 +510,7 @@ functionality with GPUs, see the
 [ML Slurm A3 example](./machine-learning/README.md).
 
 [Best practices for static compute nodes]: http://cloud/hpc-toolkit/docs/slurm/static-nodes-best-practices
-[hpc-slurm-static-v6.yaml]: ./hpc-slurm-static-v6.yaml
+[hpc-slurm-static.yaml]: ./hpc-slurm-static.yaml
 
 ### [hpc-slurm6-tpu.yaml] ![community-badge] ![experimental-badge]
 
