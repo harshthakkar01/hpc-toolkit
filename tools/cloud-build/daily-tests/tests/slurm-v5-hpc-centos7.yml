@@ -14,7 +14,7 @@
 
 ---
 
-test_name: hpc-slurm
+test_name: hpc-slurm-v5
 deployment_name: "cent-v5-{{ build }}"
 # Manually adding the slurm_cluster_name for use in node names, which filters
 # non-alphanumeric chars and is capped at 10 chars.
@@ -27,7 +27,7 @@ cli_deployment_vars:
   zone: "{{ zone }}"
   zones: "[us-west4-a,us-west4-b,us-west4-c]"
 workspace: /workspace
-blueprint_yaml: "{{ workspace }}/examples/hpc-slurm.yaml"
+blueprint_yaml: "{{ workspace }}/examples/hpc-slurm-v5-legacy.yaml"
 network: "{{ test_name }}-net"
 # Note: Pattern matching in gcloud only supports 1 wildcard, centv5*-login-* won't work.
 login_node: "{{ slurm_cluster_name }}-login-*"

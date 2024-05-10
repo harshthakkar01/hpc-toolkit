@@ -17,7 +17,7 @@ md_toc github examples/README.md | sed -e "s/\s-\s/ * /"
   * [(Optional) Setting up a remote terraform state](#optional-setting-up-a-remote-terraform-state)
 * [Ongoing Migration to Slurm-GCP v6](#ongoing-migration-to-slurm-gcp-v6)
 * [Blueprint Descriptions](#blueprint-descriptions)
-  * [hpc-slurm.yaml](#hpc-slurmyaml-) ![core-badge]
+  * [hpc-slurm-v5-legacy.yaml](#hpc-slurm-v5-legacyyaml-) ![core-badge] ![deprecated-badge]
   * [hpc-slurm-v6.yaml](#hpc-slurm-v6yaml--) ![core-badge] ![experimental-badge]
   * [hpc-enterprise-slurm-v5-legacy.yaml](#hpc-enterprise-slurm-v5-legacyyaml--) ![core-badge] ![deprecated-badge]
   * [hpc-enterprise-slurm-v6.yaml](#hpc-enterprise-slurm-v6yaml--) ![core-badge] ![experimental-badge]
@@ -194,7 +194,7 @@ Toolkit team, partners, etc.) and are labeled with the community badge
 Blueprints that are still in development and less stable are also labeled with
 the experimental badge (![experimental-badge]).
 
-### [hpc-slurm.yaml] ![core-badge]
+### [hpc-slurm-v5-legacy.yaml] ![core-badge] ![deprecated-badge]
 
 > **Warning**: The variables `enable_reconfigure`,
 > `enable_cleanup_compute`, and `enable_cleanup_subscriptions`, if set to
@@ -215,7 +215,7 @@ needing to request additional quota. The purpose of the `debug` partition is to
 make sure that first time users are not immediately blocked by quota
 limitations.
 
-[hpc-slurm.yaml]: ./hpc-slurm.yaml
+[hpc-slurm-v5-legacy.yaml]: ./hpc-slurm-v5-legacy.yaml
 
 #### Compute Partition
 
@@ -230,7 +230,7 @@ select the compute partition using the `-p compute` argument when running `srun`
 There is an `h3` partition that uses compute-optimized `h3-standard-88` machine type.
 You can read more about the H3 machine series [here](https://cloud.google.com/compute/docs/compute-optimized-machines#h3_series).
 
-#### Quota Requirements for hpc-slurm.yaml
+#### Quota Requirements for hpc-slurm-v5-legacy.yaml
 
 For this example the following is needed in the selected region:
 
@@ -1071,7 +1071,7 @@ The blueprint contains 3 groups:
 > pip3 install -r https://raw.githubusercontent.com/GoogleCloudPlatform/slurm-gcp/5.10.6/scripts/requirements.txt
 > ```
 
-Similar to the [hpc-slurm.yaml] example, but using Ubuntu 20.04 instead of CentOS 7.
+Similar to the [hpc-slurm-v5-legacy.yaml] example, but using Ubuntu 20.04 instead of CentOS 7.
 [Other operating systems] are supported by SchedMD for the the Slurm on GCP project and images are listed [here](https://github.com/GoogleCloudPlatform/slurm-gcp/blob/master/docs/images.md#published-image-family). Only the examples listed in this page been tested by the Cloud HPC Toolkit team.
 
 The cluster will support 2 partitions named `debug` and `compute`.
