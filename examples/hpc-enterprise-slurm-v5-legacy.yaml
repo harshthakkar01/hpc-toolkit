@@ -204,7 +204,7 @@ deployment_groups:
       disk_type: pd-ssd
       disk_size_gb: 100
       node_conf:
-        Sockets: 2
+        SocketsPerBoard: 2
         CoresPerSocket: 24
       service_account:
         email: $(compute_sa.service_account_email)
@@ -236,7 +236,7 @@ deployment_groups:
       disk_type: pd-ssd
       disk_size_gb: 100
       node_conf:
-        Sockets: 2
+        SocketsPerBoard: 2
         CoresPerSocket: 24
       service_account:
         email: $(compute_sa.service_account_email)
